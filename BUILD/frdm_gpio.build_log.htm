@@ -1,0 +1,89 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.26.2.0
+Copyright (C) 2018 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: shichao feng, c, LIC=CRMKP-ME4ZH-KS0YM-XB3WT-4JUC5-BH6TA
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.26.2.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.26.2.0
+Dialog DLL:      DCM.DLL V1.17.2.0
+Target DLL:      CMSIS_AGDI.dll V1.30.6.0
+Dialog DLL:      TCM.DLL V1.36.1.0
+ 
+<h2>Project:</h2>
+C:\test2\frdm_gpio\frdm_gpio.uvprojx
+Project File Date:  11/26/2018
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'frdm_gpio'
+compiling pwm_tone.cpp...
+compiling main.cpp...
+Joystick\Joystick.h(130): warning:  #1-D: last line of file ends without a newline
+  #endif
+RGB_matrix_Panel\RGBmatrixPanel.h(192): warning:  #1-D: last line of file ends without a newline
+  };
+main.cpp(267): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  				if (x < 0.2){
+main.cpp(279): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  				else if(x >0.7){
+main.cpp(293): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  				if (y < 0.2){
+main.cpp(304): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  				else if(y > 0.7){
+main.cpp: 6 warnings, 0 errors
+compiling Joystick.cpp...
+Joystick/Joystick.h(130): warning:  #1-D: last line of file ends without a newline
+  #endif
+Joystick/Joystick.cpp(30): warning:  #1361-D: function "mbed::InterruptIn::rise(T *, M) [with T=Joystick, M=void (Joystick::*)()]"  (declared at line 111 of "mbed\drivers/InterruptIn.h") was declared "deprecated"
+      button_->rise(this, &Joystick::button_isr);
+Joystick/Joystick.cpp(31): warning:  #1361-D: function "mbed::InterruptIn::fall(T *, M) [with T=Joystick, M=void (Joystick::*)()]"  (declared at line 136 of "mbed\drivers/InterruptIn.h") was declared "deprecated"
+      button_->fall(this, &Joystick::button_fall_isr);
+Joystick/Joystick.cpp(114): warning:  #1361-D: function "mbed::Ticker::attach(T *, M, float) [with T=Joystick, M=void (Joystick::*)()]"  (declared at line 104 of "mbed\drivers/Ticker.h") was declared "deprecated"
+      button_debounce_->attach(this, &Joystick::button_debounce_isr, 0.125);
+Joystick/Joystick.cpp(120): warning:  #1-D: last line of file ends without a newline
+  }
+Joystick/Joystick.cpp: 5 warnings, 0 errors
+compiling Adafruit_GFX.cpp...
+RGB_matrix_Panel/Adafruit-GFX/glcdfont.h(263): warning:  #1-D: last line of file ends without a newline
+  #endif // FONT5X7_H
+RGB_matrix_Panel/Adafruit-GFX/Adafruit_GFX.cpp: 1 warning, 0 errors
+compiling RGBmatrixPanel.cpp...
+RGB_matrix_Panel/RGBmatrixPanel.h(192): warning:  #1-D: last line of file ends without a newline
+  };
+RGB_matrix_Panel/RGBmatrixPanel.cpp(71): warning:  #1361-D: function "mbed::Ticker::attach_us(T *, M, us_timestamp_t) [with T=RGBmatrixPanel, M=void (RGBmatrixPanel::*)()]"  (declared at line 144 of "mbed\drivers/Ticker.h") was declared "deprecated"
+      _refresh.attach_us(this,(&RGBmatrixPanel::updateDisplay),100);   //updateDisplay() called every 1ms
+RGB_matrix_Panel/RGBmatrixPanel.cpp: 2 warnings, 0 errors
+linking...
+C:\Users\SHICHA~1\AppData\Local\Temp\p740-3(124): warning: L6312W: Empty Execution region description for region RW_IRAM1
+Program Size: Code=36876 RO-data=8600 RW-data=468 ZI-data=3744  
+Finished: 0 information, 1 warning and 0 error messages.
+FromELF: creating hex file...
+".\BUILD\frdm_gpio.axf" - 0 Error(s), 15 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: NXP
+                http://mcuxpresso.nxp.com/cmsis_pack/repo/NXP.MK64F12_DFP.10.0.4.pack
+                NXP.MK64F12_DFP.10.0.4
+                Device Family Pack for MK64F12
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_frdm_gpio
+  C:\Keil_v5\ARM\PACK\NXP\MK64F12_DFP\10.0.4
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:06
+</pre>
+</body>
+</html>
